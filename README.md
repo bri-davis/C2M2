@@ -1,5 +1,5 @@
 # C2M2 Robotics
-This repositiory hosts the controller code, build instructions, and tutorials for the LEGO EV3 robots in the Center for Computational Mathematics and Modeling. The master contains stable releases of code, while the individual branches are used for testing in the labspace.
+This repositiory hosts the controller code, build instructions, and tutorials for the LEGO EV3 robots in the [Center for Computational Mathematics and Modeling](https://c2m2.cst.temple.edu/). The master contains stable releases of code, while the individual branches are used for testing in the labspace.
 ## Required Resources
 For this long-term project, we are using the following version of [ev3dev](https://www.ev3dev.org/):
 
