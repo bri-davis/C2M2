@@ -7,9 +7,9 @@ import array
 import math
 
 robot_speed=-230  #duty_cycle
-c=-1/90 #-1/350 #1/300forsp=300  #-.68 #4/(.087*.087*-0.213455*3636.364) #P Control constant
-a=0 #1/6000 #-1/5000#-1/1200  #I Control constant
-b=0
+c=-1/320 #-1/350 #1/300forsp=300  #-.68 #4/(.087*.087*-0.213455*3636.364) #P Control constant
+a=0#-1/4000#1/3000 #1/6000 #-1/5000#-1/1200  #I Control constant
+b=-5/10000#1/200
 µ=1  #I's calculation constant
 
 max_motor_speed=100 #duty_cycle
@@ -105,7 +105,7 @@ while not touch_sensor.value():
     prev_8th_time=previous_times[index]
     previous_times[index]=current_time
     D=(S-prev_8th_S)/(current_time-prev_8th_time)
-    
+    print(current_time-prev_8th_time)
     # I Control
     #input: positon S (m), time t (s)
     #output: integral of position S with respect to time t (ms)
